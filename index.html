@@ -1,14 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CedarLabs - We Are Hiring!</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-        h1 { color: #007bff; }
+        body { font-family: 'Poppins', sans-serif; margin: 0; padding: 0; text-align: center; background-color: #f4f4f4; }
+        header { background: linear-gradient(135deg, #ff4081, #7c4dff); color: white; padding: 40px; font-size: 24px; }
+        header img { width: 150px; height: auto; margin-bottom: 10px; }
+        nav { background: #ff80ab; padding: 15px; border-radius: 0 0 15px 15px; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        nav a { color: white; margin: 0 20px; text-decoration: none; font-size: 20px; font-weight: bold; transition: 0.3s; }
+        nav a:hover { color: #f4f4f4; text-decoration: underline; }
+        section { padding: 60px; }
+        .container { max-width: 800px; margin: auto; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
+        h2 { color: #7c4dff; }
+        p { font-size: 18px; color: #444; }
+        a { color: #ff4081; font-weight: bold; }
+        footer { background: #7c4dff; color: white; padding: 20px; font-size: 16px; border-radius: 15px 15px 0 0; position: fixed; bottom: 0; width: 100%; }
     </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>Hosted for free with GitHub Pages.</p>
+    <header>
+        <img src="robot.webp" alt="CedarLabs Logo">
+        <h1>Welcome to CedarLabs</h1>
+        <p>STEM | Education | Innovation</p>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+    </nav>
+    
+    <section>
+        <div class="container">
+            <h2>We Are Hiring!</h2>
+            <p>Join us in shaping the future of STEM education. <br>
+               We are looking for passionate educators, artists, and innovators.</p>
+            <p>Email your resume to: <strong><a href="mailto:careers@cedarlb.com">careers@cedarlb.com</a></strong></p>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 CedarLabs. All rights reserved.</p>
+    </footer>
 </body>
 </html>
