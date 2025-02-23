@@ -5,28 +5,207 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CedarLabs - Home</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #07120F, #0E2A1B, #16422A,  #267647, #1D5B38);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: #07120F;
+        }
+        .top-bar h1 {
+            display: flex;
+            align-items: center;
+            font-size: 36px;
+        }
+        .button {
+            background: #ffb400;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            background: url('Red Modern Hexagon Diagram (3).png') no-repeat center center/cover;
+		
+            height: 33vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+			
+        }
+		.hero h2
+		{
+		 font-size: 3em;
+		 }
+		.h2{
+			color: #FFA000;
+
+			}
+		
+        .intro-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: left;
+        }
+        .intro-text {
+            width: 50%;
+        }
+        .intro-text h2 {
+            color: #FFA000;
+            font-size: 2em;
+        }
+        .intro-text p {
+            color: #FFF;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .intro-logo img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .button-outline {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ffb400;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .button-outline:hover {
+            background: #ffa000;
+        }
+        .services {
+            text-align: center;
+            padding: 50px;
+            background:#1D5B38 ;
+        }
+        .services h2 {
+            color: #FFA000;
+        }
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            width: 30%;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+            margin: 15px;
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .service h3, .service p {
+            color: #222;
+            font-weight: bold;
+        }
+        .hiring {
+            text-align: center;
+            padding: 60px;
+            background: #267647;
+            color: white;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .spacer {
+            height: 100px;
+			background: #1D5B38;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <img src="robot.webp" alt="CedarLabs Logo">
-        <h1>Welcome to CedarLabs</h1>
-        <p>STEM | Education | Innovation</p>
+        <div class="top-bar">
+            <h1>Cedar Labs</h1>
+            <a href="#" class="button">Registration Coming Soon</a>
+        </div>
     </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Us</a>
-        <a href="vision-mission.html">Vision & Mission</a>
-    </nav>
     
-    <section>
-        <div class="container">
-            <h2>We Are Hiring!</h2>
-            <p>Join us in shaping the future of STEM education. <br>
-               We are looking for passionate educators, artists, and innovators.</p>
-            <p>Email your resume to: <strong><a href="mailto:jobs@cedarlb.com">jobs@cedarlb.com</a></strong></p>
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2>Where STEM Learning Thrives</h2>
+            <p>We deliver quality STEM education with interactive experiences, hands-on projects, and creative problem-solving to inspire curiosity and innovation, equipping learners for a fast-paced tech world.</p>
+            <a href="#" class="button-outline">Coming Soon</a>
         </div>
     </section>
     
+    <section class="intro-section">
+        <div class="intro-text">
+            <h2>Pioneering STEM Success in Lebanon</h2>
+            <p>Empower your future with Cedar Lab's cutting-edge STEM education, fostering innovation and excellence in Lebanon's next generation.</p>
+            <a href="#" class="button-outline">Coming Soon</a>
+        </div>
+        <div class="intro-logo">
+            <img src="Cedar Labs.png" alt="Cedar Labs Logo">
+        </div>
+    </section>
+    
+    <section class="services">
+        <h2>Our Programs</h2>
+        <div class="service-container">
+            <div class="service">
+                <img src="Red Modern Hexagon Diagram (2).png" alt="Innovative STEM Summer Program">
+                <h3>Innovative STEM Summer Program</h3>
+                <p>Engaging hands-on STEM experiences for children, focusing on robotics, coding, and innovation.</p>
+            </div>
+            <div class="service">
+                <img src="Red Modern Hexagon Diagram (1).png" alt="Enriched After-School Activities">
+                <h3>Enriched After-School Activities</h3>
+                <p>Exciting STEM projects and explorations after school, helping students develop critical thinking and creativity.</p>
+            </div>
+            <div class="service">
+                <img src="Red Modern Hexagon Diagram (3).png" alt="Structured Math & Logic Program">
+                <h3>Structured Math & Logic Program</h3>
+                <p>Customized learning paths focused on mathematics and problem-solving to enhance academic excellence.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="hiring">
+        <h2>We're Hiring!</h2>
+        <p>Join us in shaping the future of STEM education at Cedar Labs!</p>
+        <a href="job-postings.html">View Job Openings</a>
+    </section>
+    
+    <div class="spacer"></div>
+
     <footer>
         <p>&copy; 2025 CedarLabs. All rights reserved.</p>
     </footer>

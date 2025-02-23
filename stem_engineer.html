@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CedarLabs - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <style>
+        body {
+            background: linear-gradient(to bottom, #07120F, #0E2A1B, #16422A,  #267647, #1D5B38);
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        .top-bar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background: #07120F;
+        }
+        .top-bar h1 {
+            display: flex;
+            align-items: center;
+            font-size: 36px;
+        }
+        .button {
+            background: #ffb400;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .hero {
+            position: relative;
+            background: url('Red Modern Hexagon Diagram (3).png') no-repeat center center/cover;
+		
+            height: 33vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+			
+        }
+		.hero h2
+		{
+		 font-size: 3em;
+		 }
+		.h2{
+			color: #FFA000;
+
+			}
+		
+        .intro-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 60px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: left;
+        }
+        .intro-text {
+            width: 50%;
+        }
+        .intro-text h2 {
+            color: #FFA000;
+            font-size: 2em;
+        }
+        .intro-text p {
+            color: #FFF;
+            font-size: 1.2em;
+            line-height: 1.5;
+        }
+        .intro-logo img {
+            width: 100%;
+            max-width: 300px;
+        }
+        .button-outline {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #ffb400;
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .button-outline:hover {
+            background: #ffa000;
+        }
+        .services {
+            text-align: center;
+            padding: 50px;
+            background:#1D5B38 ;
+        }
+        .services h2 {
+            color: #FFA000;
+        }
+        .service-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service {
+            width: 30%;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            text-align: center;
+            margin: 15px;
+        }
+        .service img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .service h3, .service p {
+            color: #222;
+            font-weight: bold;
+        }
+        .hiring {
+            text-align: center;
+            padding: 60px;
+ 
+			background: #1D5B38;
+			      background: #1B3B31;
+            color: white;
+
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .spacer {
+            height: 100px;
+			      background: #1B3B31;
+        }
+		.job-card {
+			background: #1D5B38;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+            text-align: left;
+        }
+        .job-card h3 {
+            margin: 0;
+            color: #FFB400;
+        }
+        .job-card p {
+            margin: 10px 0;
+        }
+        .job-card a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #FFB400;
+            color: #07120F;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .job-card a:hover {
+            background: #FFA000;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-bar">
+            <h1>Cedar Labs</h1>
+            <a href="job-postings.html" class="button">Back to Careers</a>
+        </div>
+    </header>
+    
+    <section class="container">
+        <h2>Teacher (Structured Learning & STEM – Open to New Graduates)</h2>
+        <p><strong>Location:</strong> Bekaa Valley, Lebanon</p>
+        <p><strong>Job Type:</strong> Full-Time</p>
+        <p><strong>Salary:</strong> Based on experience – applicants should state their salary expectations</p>
+        <p><strong>Start Date:</strong> Immediate</p>
+        
+        <h3>About Us</h3>
+        <p>CedarLabs is an education center dedicated to providing engaging and interactive learning experiences through structured learning programs in math, literacy, and hands-on STEM activities.</p>
+        
+        <h3>Job Description</h3>
+        <p>We are looking for a motivated teacher to join our team. Candidates should have a background in structured learning and a passion for education. Experience in STEM subjects is a plus, but not required.</p>
+        
+        <h3>Responsibilities</h3>
+        <ul>
+            <li>Plan and deliver engaging lessons tailored to different age groups.</li>
+            <li>Use a structured, step-by-step approach to teach math and literacy.</li>
+            <li>Create an interactive classroom environment that encourages learning.</li>
+            <li>Encourage problem-solving, critical thinking, and independent learning.</li>
+            <li>Develop hands-on activities and STEM-related projects.</li>
+            <li>Monitor and assess student progress, providing feedback.</li>
+            <li>Maintain a well-organized and safe learning environment.</li>
+        </ul>
+        
+        <h3>Qualifications</h3>
+        <ul>
+            <li>Bachelor’s degree in Education (BSc in Education required).</li>
+            <li>Experience teaching children preferred; new graduates encouraged to apply.</li>
+            <li>Familiarity with structured, self-paced learning approaches.</li>
+            <li>Strong classroom management and communication skills.</li>
+            <li>Fluency in English and Arabic.</li>
+            <li>Interest in STEM education is a plus but not required.</li>
+        </ul>
+        
+        <h3>Why Join Us?</h3>
+        <ul>
+            <li>Be part of an innovative and growing education center.</li>
+            <li>Great opportunity for new graduates to gain hands-on teaching experience.</li>
+            <li>Supportive environment for curriculum development and skill-building.</li>
+            <li>Opportunity to teach both structured learning and interactive STEM lessons.</li>
+        </ul>
+        
+        <h3>How to Apply</h3>
+        <p>Send your CV, cover letter, and salary expectations to <a href="mailto:jobs@cedarlb.com">jobs@cedarlb.com</a> with the subject line "Teacher Application - [Your Name]".</p>
+    </section>
+       <div class="spacer"></div>
+    <footer>
+        <p>&copy; 2025 CedarLabs. All rights reserved.</p>
+    </footer>
+</body>
+</html>
