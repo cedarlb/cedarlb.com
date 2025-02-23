@@ -2,13 +2,13 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0D1B16; /* Dark green background */
-    color: #F0FDF4; /* Light green text */
+    background-color: #0D1B16;
+    color: #F0FDF4;
     text-align: center;
 }
 
 header {
-    background-color: #07120F; /* Dark header */
+    background-color: #07120F;
     color: white;
     padding: 50px;
     text-align: center;
@@ -37,7 +37,7 @@ section {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 90%;
     margin: auto;
     background: #1B3B31;
     padding: 30px;
@@ -46,13 +46,13 @@ section {
 }
 
 h2 {
-    color: #FFB400; /* Orange heading color */
+    color: #FFB400;
 }
 
 .button {
     display: inline-block;
     padding: 15px 30px;
-    background-color: #FFB400; /* Orange buttons */
+    background-color: #FFB400;
     color: #07120F;
     font-size: 18px;
     font-weight: bold;
@@ -69,7 +69,26 @@ footer {
     background: #07120F;
     color: white;
     padding: 20px;
-    position: fixed;
-    bottom: 0;
+    position: relative;
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .button {
+        width: 100%;
+    }
+    
+    .container {
+        padding: 20px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
