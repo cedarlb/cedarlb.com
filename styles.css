@@ -37,7 +37,8 @@ section {
 }
 
 .container {
-    max-width: 90%;
+    display: flex;
+    max-width: 50%;
     margin: auto;
     background: #1B3B31;
     padding: 30px;
